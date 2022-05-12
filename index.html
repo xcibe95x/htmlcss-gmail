@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mauro Leoci</title>
+    <link rel="stylesheet" href="main.css" class="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="img/logo.png" class="favicon">
+
+<title>Mauro Leoci - Mail Template</title>
 </head>
+
 <body>
     
+<!-- MailBox Container -->
+    
+    <div class="container">
+
+        <!-- Gmail Header Logo -->
+        <header>
+            <img class="logo" src="img/logo.png">
+            <span>GMAIL</span>
+        </header>
+
+        <main>
+
+            <hr>
+
+            <!-- Email Total Notification -->
+
+            <section id="email-all">
+
+                <div class="searchBox">
+                    <input id="search" class="searchBar" type="textbox" placeholder="Search"> 
+                    <input id="submit" onclick="alert('You searched for ' + document.getElementById('search').value);" class="searchButton" type="button" value="Cerca">
+                    <div class="notifications">Ci sono <span>30</span> messaggi</div>
+                </div>
+
+            </section>
+
+            <hr>
+
+
+            <!-- Received Email List-->
+
+            <section id="email-list">
+
+                <!--  for (int i = 0; i < email; i++) -->
+                <div class="email-box">
+                    <input type="checkbox" name="email1" value="email1-content">
+                    <label for="email1"><span class="star">&starf;</span><b>Elon Musk</b> <span class="spacer">&minus;</span> La tua nuova Tesla è in arrivo.</label>
+                </div>
+                <div class="email-box read">
+                <input type="checkbox" name="email2" value="email2-content">
+                <label for="email2"><span class="star">&starf;</span><b>Hai vinto 13333333337$!</b> <span class="spacer">&minus;</span> Congratulazioni, sei pronto ad essere scammato.</label>
+                </div>
+                <div class="email-box">
+                <input type="checkbox" name="email3" value="email3-content">
+                <label for="email3"><span class="star">&starf;</span><b>Password update</b> <span class="spacer">&minus;</span> Your password has been changed.</label>
+                </div>
+                <div class="email-box">
+                <input type="checkbox" name="email4" value="email4-content">
+                <label for="email4"><span class="star">&starf;</span><b>Bitcoin are Dead</b> <span class="spacer">&minus;</span> Bitcoins in a dead spiral</label>
+                </div>
+                <div class="email-box">
+                <input type="checkbox" name="email5" value="email5-content">
+                <label for="email5"><span class="star">&starf;</span><b>FBI</b> <span class="spacer">&minus;</span> Open the door</label>
+                </div>
+                <!-- End of For Each Loop -->
+
+            </section>
+
+            <hr>
+
+        </main>
+
+        <!-- Footer -->
+            
+        <footer>powered by <b>Mauro Leoci</b> &lambda;</footer>
+    
+    </div>
+
+
 </body>
 </html>

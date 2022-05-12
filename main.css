@@ -2,4 +2,103 @@
 /* @desc Old School GMAIL Styling */ 
 
 
-/* General Purpose CSS */
+/* General */
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ff4500; /* λ My Trademark Color λ */
+    margin: 0 auto;
+}
+
+header > span {
+    font-weight: 800;
+    margin-left: 5px;
+}
+
+hr {
+    border-style: solid;
+    color: #ff4500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label > span.star {
+    font-weight: bold;
+    margin: 10px;
+    position: relative;
+    bottom: 1.5px;
+}
+
+label > span.spacer {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Page Logo */
+
+.logo {
+
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+ 
+}
+
+/* Containers Section */
+
+.container {
+
+    background-color: #fff;
+    width: 50%;
+    padding: 20px;
+    margin: 200px auto;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.searchBox {
+    margin-left: 5px;
+}
+
+/* Email Notifications Box */
+
+.notifications {
+    margin: 20px 0 30px 0;
+}
+
+.notifications > span {
+    background: #ff4500;
+    border-radius: 100%;
+    color: white;
+    padding: 14px;
+}
+
+.email-box {
+    background: #C4C4C4;
+    padding: 5px;
+    object-fit: contain;
+    overflow: auto;
+}
+
+.email-box.read {
+    background: white;
+}
+
+
+/* Inputs Style */
+
+.searchButton, .searchBar {
+
+    border-radius: 3px;
+    padding: 1px 10px 1px 10px;
+
+}
